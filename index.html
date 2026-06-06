@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- ============================= -->
+    <!-- CONFIGURAÇÕES GERAIS DA PÁGINA -->
+    <!-- ============================= -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Triple Peaks</title>
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Reset de estilos padrão do navegador -->
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+
+    <!-- Arquivo principal de estilos -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- ============================= -->
+    <!-- CONTAINER PRINCIPAL DA PÁGINA -->
+    <!-- ============================= -->
+
+    <div class="page">
+      <!-- ============================= -->
+      <!-- HEADER / TOPO DA PÁGINA -->
+      <!-- ============================= -->
+
+      <header class="header">
+        <!-- ============================= -->
+        <!-- MENU DE NAVEGAÇÃO -->
+        <!-- Logo + links do menu -->
+        <!-- ============================= -->
+
+        <nav class="nav">
+          <img
+            src="./images/logo.svg"
+            alt="Logotipo da Biblioteca Triple Peaks"
+            class="nav__logo"
+          />
+
+          <ul class="nav__links">
+            <li>
+              <!-- Link âncora que leva até a seção staff -->
+              <a href="#staff" class="nav__link">Escolhas da Equipe</a>
+            </li>
+
+            <li>
+              <a class="nav__link">Eventos</a>
+            </li>
+
+            <li>
+              <a class="nav__link">Seja um membro</a>
+            </li>
+
+            <li>
+              <a class="nav__link">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ============================= -->
+        <!-- CONTEÚDO PRINCIPAL DO HEADER -->
+        <!-- Título + descrição + imagem -->
+        <!-- ============================= -->
+
+        <div class="header__content">
+          <div>
+            <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
+
+            <p class="header__description">
+              Temos o prazer de abrir as portas da nossa biblioteca a todos!
+              Venha expandir seus conhecimentos de desenvolvimento, ou apenas
+              use esse belo local para trabalhar ou estudar. Esse é um lugar
+              legal para estudantes legais!
+            </p>
+          </div>
+
+          <img
+            src="./images/inside_the_library.png"
+            alt="Ilustração 'Dentro da biblioteca'"
+            class="header__image"
+          />
+        </div>
+
+        <!-- ============================= -->
+        <!-- RODAPÉ DO HEADER -->
+        <!-- Endereço da biblioteca -->
+        <!-- ============================= -->
+
+        <div class="header__footer">
+          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
+        </div>
+      </header>
+
+      <!-- ============================= -->
+      <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+      <!-- ============================= -->
+
+      <main class="content">
+        <!-- ============================= -->
+        <!-- SECTION STAFF -->
+        <!-- Escolhas da equipe -->
+        <!-- ============================= -->
+
+        <section class="staff" id="staff">
+          <!-- Título da seção -->
+          <h2 class="staff__title">Escolhas da Equipe</h2>
+
+          <!-- Subtítulo -->
+          <p class="staff__subtitle">Que nossos leitores adoram</p>
+
+          <!-- ============================= -->
+          <!-- LISTA DE CARDS DE LIVROS -->
+          <!-- ============================= -->
+
+          <ul class="staff__cards">
+            <!-- CARD 1 -->
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Algoritmos: Teoria e Prática</h3>
+
+                <p class="card__text">
+                  Esse livro é uma introdução adequada aos algoritmos!
+                  Introdução aos algoritmos, ou CLRS, em referência aos
+                  sobrenomes dos autores, aprofunda e abrange uma variedade de
+                  algoritmos em vários capítulos independentes.
+                </p>
+
+                <p class="card__footer">
+                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
+                  Clifford Stein
+                </p>
+              </div>
+            </li>
+
+            <!-- CARD 2 -->
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  A Estrutura e Interpretação de Programas de Computador (SICP,
+                  na sigla em inglês)
+                </h3>
+
+                <p class="card__text">
+                  Esse é um dos melhores livros para aprender os fundamentos da
+                  programação. Destacado pelo MIT em um de seus cursos
+                  fundamentais de programação, SICP é um livro de programação de
+                  uso geral que utiliza Scheme para ilustrar diversos conceitos
+                  de programação.
+                </p>
+
+                <p class="card__footer">
+                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
+                </p>
+              </div>
+            </li>
+
+            <!-- CARD 3 -->
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  O Codificador Limpo: Um Código de Conduta para Programadores
+                  Profissionais
+                </h3>
+
+                <p class="card__text">
+                  Compilado pelo experiente desenvolvedor de software e autor
+                  Robert C. Martin, esse livro aborda as técnicas e ferramentas
+                  da verdadeira capacidade do software. Explica como escrever um
+                  código limpo e demonstrar como cultivar a atitude de um
+                  programador competente e profissional.
+                </p>
+
+                <p class="card__footer">Robert C. Martin</p>
+              </div>
+            </li>
+
+            <!-- CARD 4 -->
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  Code Complete: Um Manual Prático de Construção de Software
+                </h3>
+
+                <p class="card__text">
+                  Quer saber como escrever um código robusto, independentemente
+                  da arquitetura por trás da linguagem de programação escolhida?
+                  Em seguida, considere a leitura do livro: Code Complete. Ele
+                  aborda de forma abrangente tudo relacionado à boa estrutura de
+                  código.
+                </p>
+
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
