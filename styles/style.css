@@ -31,7 +31,6 @@
 
 .nav__links {
   display: flex;
-
   gap: 20px;
 
   list-style-type: none;
@@ -78,9 +77,11 @@
 .header__footer {
   margin-top: auto;
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   box-sizing: border-box;
 }
 
@@ -112,6 +113,7 @@
 
   font-size: 40px;
   line-height: 52px;
+
   text-align: center;
   color: #ffffff;
 }
@@ -123,6 +125,7 @@
 
   font-size: 20px;
   line-height: 30px;
+
   text-align: center;
   color: #ffffff;
 }
@@ -148,6 +151,7 @@
   height: auto;
 
   background-color: #ffffff;
+
   display: flex;
 }
 
@@ -156,22 +160,28 @@
   flex-direction: column;
 
   padding: 32px 40px;
+
   justify-content: center;
+
   box-sizing: border-box;
   width: 100%;
 }
 
 .card__title {
   margin: 0;
+
   font-size: 21px;
   line-height: 28px;
+
   text-align: start;
 }
 
 .card__text {
   margin: 16px 0;
+
   font-size: 16px;
   line-height: 24px;
+
   text-align: start;
 }
 
@@ -180,5 +190,170 @@
 
   font-weight: bold;
   color: #838383;
+
   align-items: start;
+}
+
+/* ---------- EVENTS ---------- */
+
+.events {
+  padding: 100px 80px;
+  background-color: #f2f2f2;
+}
+
+.events__content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 60px 40px;
+}
+
+.events__info {
+  flex: 1;
+  max-width: 400px;
+}
+
+.events__caption {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.events__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.events__date-place {
+  margin-bottom: 16px;
+}
+
+.events__date,
+.events__place {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.events__description {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.events__more {
+  color: #1a73e8;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* Wrapper das imagens — posicionamento relativo */
+
+.events__image-wrapper {
+  flex: 1;
+  position: relative;
+
+  min-height: 500px;
+  min-width: 550px;
+}
+
+/* Ilustração central da biblioteca */
+
+.events__image {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 650px;
+
+  z-index: 0;
+}
+
+/* Fotos dos cientistas — base */
+
+.events__scientist {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.events__scientist-photo {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid white;
+}
+
+.events__scientist-name {
+  font-size: 11px;
+  margin-top: 5px;
+  color: #333;
+}
+
+/* Posições individuais */
+
+.events__scientist_joan {
+  top: 35px;
+  left: 45%;
+  transform: translateX(-20%);
+}
+
+.events__scientist_jill {
+  top: 90px;
+  left: 115px;
+}
+
+.events__scientist_margaret {
+  top: 100px;
+  right: 90px;
+}
+
+.events__scientist_maria {
+  bottom: 40px;
+  left: 65px;
+}
+
+.events__scientist_annie {
+  bottom: 0;
+  right: 155px;
+}
+
+/* ---------- COMANDO DE IMAGENS ARTISTAS ---------- */
+
+.events__scientist_joan .events__scientist-photo {
+  width: 90px;
+  height: 90px;
+}
+
+.events__scientist_jill .events__scientist-photo {
+  width: 80px;
+  height: 80px;
+}
+
+.events__scientist_margaret .events__scientist-photo {
+  width: 85px;
+  height: 85px;
+}
+
+.events__scientist_maria .events__scientist-photo {
+  width: 73px;
+  height: 73px;
+}
+
+.events__scientist_annie .events__scientist-photo {
+  width: 80px;
+  height: 80px;
 }
