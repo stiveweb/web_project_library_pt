@@ -197,114 +197,112 @@
 /* ---------- EVENTS ---------- */
 
 .events {
-  padding: 100px 80px;
+  padding: 100px 0 120px 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
 .events__content {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  padding: 60px 40px;
+  flex-basis: 580px;
 }
 
-.events__info {
-  flex: 1;
-  max-width: 400px;
-}
-
-.events__caption {
-  font-size: 15px;
-  color: #333;
-  margin-bottom: 12px;
+.events__heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
 }
 
 .events__title {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 16px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0 0;
 }
 
-.events__date-place {
-  margin-bottom: 16px;
+.events__info-section {
+  margin-top: 32px;
 }
 
-.events__date,
-.events__place {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 6px;
+.event-info__item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.event-info__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.event-info__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
 }
 
 .events__description {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  margin: 40px 0 60px;
 }
 
 .events__more {
-  color: #1a73e8;
-  font-size: 13px;
+  color: #2f80ed;
   text-decoration: none;
 }
 
-/* 1. Wrapper — events__cover */
 .events__cover {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 780px;
+  max-width: 780px;
   position: relative;
-  flex: 1;
-  min-height: 500px;
-  min-width: 550px;
 }
 
-/* 2. Ilustração principal */
 .events__image {
-  width: 100%;
-  display: block;
+  max-width: 100%;
 }
 
-/* 3. Bloco genérico person */
 .person {
   position: absolute;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* 4. Legenda com nome */
-.person__caption {
-  font-size: 12px;
-  color: #333;
-  margin-bottom: 4px;
-  white-space: nowrap;
-}
-
-/* 5. Imagem circular — três tamanhos */
 .person__image {
+  max-width: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white;
-  display: block;
 }
 
 .person__image_size_l {
-  width: 96px;
-  height: 96px;
+  width: 140px;
 }
 
 .person__image_size_m {
-  width: 80px;
-  height: 80px;
+  width: 100px;
 }
 
 .person__image_size_s {
-  width: 64px;
-  height: 64px;
+  width: 80px;
 }
 
-/* 6 e 7. Posições de cada pessoa  */
+.person__caption {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Posições exatas do roteiro (página 6) */
 .person_name_feynman {
   top: -30px;
   left: 319px;
