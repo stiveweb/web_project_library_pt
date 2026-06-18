@@ -235,7 +235,6 @@
   font-size: 16px;
   color: #555;
   margin-bottom: 6px;
-
   display: flex;
   align-items: center;
   gap: 8px;
@@ -254,106 +253,79 @@
   text-decoration: none;
 }
 
-/* Wrapper das imagens — posicionamento relativo */
-
-.events__image-wrapper {
-  flex: 1;
+/* 1. Wrapper — events__cover */
+.events__cover {
   position: relative;
-
+  flex: 1;
   min-height: 500px;
   min-width: 550px;
 }
 
-/* Ilustração central da biblioteca */
-
+/* 2. Ilustração principal */
 .events__image {
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-
-  width: 650px;
-
-  z-index: 0;
+  width: 100%;
+  display: block;
 }
 
-/* Fotos dos cientistas — base */
-
-.events__scientist {
+/* 3. Bloco genérico person */
+.person {
   position: absolute;
   text-align: center;
-  z-index: 1;
 }
 
-.events__scientist-photo {
-  width: 80px;
-  height: 80px;
+/* 4. Legenda com nome */
+.person__caption {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
 
+/* 5. Imagem circular — três tamanhos */
+.person__image {
   border-radius: 50%;
   object-fit: cover;
-
   border: 3px solid white;
+  display: block;
 }
 
-.events__scientist-name {
-  font-size: 11px;
-  margin-top: 5px;
-  color: #333;
+.person__image_size_l {
+  width: 96px;
+  height: 96px;
 }
 
-/* Posições individuais */
-
-.events__scientist_joan {
-  top: 35px;
-  left: 45%;
-  transform: translateX(-20%);
-}
-
-.events__scientist_jill {
-  top: 90px;
-  left: 115px;
-}
-
-.events__scientist_margaret {
-  top: 100px;
-  right: 90px;
-}
-
-.events__scientist_maria {
-  bottom: 40px;
-  left: 65px;
-}
-
-.events__scientist_annie {
-  bottom: 0;
-  right: 155px;
-}
-
-/* ---------- COMANDO DE IMAGENS ARTISTAS ---------- */
-
-.events__scientist_joan .events__scientist-photo {
-  width: 90px;
-  height: 90px;
-}
-
-.events__scientist_jill .events__scientist-photo {
+.person__image_size_m {
   width: 80px;
   height: 80px;
 }
 
-.events__scientist_margaret .events__scientist-photo {
-  width: 85px;
-  height: 85px;
+.person__image_size_s {
+  width: 64px;
+  height: 64px;
 }
 
-.events__scientist_maria .events__scientist-photo {
-  width: 73px;
-  height: 73px;
+/* 6 e 7. Posições de cada pessoa  */
+.person_name_feynman {
+  top: -30px;
+  left: 319px;
 }
 
-.events__scientist_annie .events__scientist-photo {
-  width: 80px;
-  height: 80px;
+.person_name_tarter {
+  top: 79px;
+  left: 159px;
+}
+
+.person_name_burbidge {
+  top: 96px;
+  right: 125px;
+}
+
+.person_name_mitchell {
+  bottom: 82px;
+  left: 142px;
+}
+
+.person_name_cannon {
+  bottom: 18px;
+  right: 216px;
 }
