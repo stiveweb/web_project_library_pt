@@ -392,7 +392,7 @@
 .footer__column_content_hours {
   display: flex;
   flex-direction: column;
-  margin-right: 220px;
+  margin-left: 500px;
 }
 
 .footer__column_content_social {
