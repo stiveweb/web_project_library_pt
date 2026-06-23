@@ -148,7 +148,7 @@
 
 .card {
   width: 360px;
-  height: auto;
+  height: 420px;
 
   background-color: #ffffff;
 
@@ -419,9 +419,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.footer__list-item {
 }
 
 .footer__column-link {
